@@ -1,6 +1,6 @@
 module ApplicationHelper
   def newhelp(pagetitle='')
-    basetitle='Haq'
+    basetitle='Haqq'
     pagetitle.empty? ? asetitle : pagetitle + " | " + basetitle 
   end
 end
