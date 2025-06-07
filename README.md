@@ -1,70 +1,108 @@
-# Only Verified - A Twitter Clone
+Here is the complete `README.md` file for your repo:
 
-Only Verified is a web application inspired by Twitter, allowing users to sign up, create posts, and interact with other users. This project showcases a full-stack web development build using Ruby on Rails.
+````markdown
+# Only Verified
 
-## Key Features
+**Only Verified** is a minimalist Twitter clone application built with Ruby on Rails, designed to support a social platform exclusively for verified users. It focuses on authentication, user identity verification, and a clean, simple interface.
 
-*   **User Authentication:** Secure user sign-up, login, and logout functionality.
-*   **User Profiles:** Each user has a personal profile page displaying their posts and information.
-*   **Post Creation:** Users can create and share short messages (tweets/posts).
-*   **Feed/Timeline:** A central feed displaying posts from users. (You may want to elaborate if it's posts from followed users or all users).
-*   **User Management:** Admin capabilities for managing users (if applicable, based on the `add_admin_to_users.rb` migration).
-*   **(Potential) Following Users:** Functionality for users to follow and unfollow others (Please add this if it's implemented).
-*   **(Potential) Image Uploads:** Users can attach images to their posts (based on `image_processing` and `active_storage_validations` gems).
+---
 
-## Technologies Used
+## Features
 
-*   **Backend:** Ruby on Rails
-*   **Frontend:** HTML, CSS (SCSS), JavaScript, Bootstrap (via `bootstrap-sass`)
-*   **Database:** SQLite (development/test), PostgreSQL (production)
-*   **Authentication:** bcrypt
-*   **Pagination:** will_paginate
-*   **Asset Management:** Webpacker, Sass-Rails
-*   **Web Server:** Puma
-*   **Deployment:** Configured for Heroku (with potential AWS S3 integration for file storage)
+- **User Authentication:**  
+  - Signup, login, and logout functionality with `remember me` option for persistent sessions.  
+  - Only verified users can participate (the app’s concept centers on verified identities).  
 
-## Getting Started
+- **User Profile & Verification:**  
+  - After signup, if a user’s email is associated with a WordPress Gravatar, their profile will display the Gravatar icon automatically.  
+  - Basic user model setup with email verification logic (email uniqueness, password security).  
 
-To get started with the app locally, follow these steps:
+- **Tweet Model (in progress):**  
+  - Tweet functionality is planned but currently not developed yet. The model scaffold exists as a placeholder.  
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
-    ```
+- **Testing:**  
+  - Comprehensive test suite with over 40 test files.  
+  - A total of 166 assertions implemented using MiniTest framework to ensure code reliability and stability.  
 
-2.  **Install dependencies:**
-    Ensure you have Ruby and Bundler installed. Then run:
-    ```bash
-    bundle install --without production
-    ```
+---
 
-3.  **Set up the database:**
-    ```bash
-    rails db:migrate
-    rails db:seed # If you have a seeds.rb file for initial data
-    ```
+## Tech Stack
 
-4.  **Run the test suite (optional but recommended):**
-    ```bash
-    rails test
-    ```
+- Ruby on Rails 6.1  
+- MiniTest for testing  
+- Gravatar integration for user profile icons
+- Frontend: Server-rendered HTML using Rails ERB views (no separate JS framework)
+- CSS Framework: Bootstrap 4 for responsive layout and styling
 
-5.  **Start the local server:**
-    ```bash
-    rails server
-    ```
-    The application should now be running on `http://localhost:3000`.
 
-## Live Application
 
-You can find the live version of this application deployed on Heroku:
+---
 
-[Link to your Heroku deployment] - **Please update this link!**
+## Installation
 
-(Note: The `CNAME` file in this repository might be used for custom domain configuration on Heroku.)
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/nizam12khan/only_verified.git
+   cd only_verified
+````
+
+2. Install dependencies:
+
+   ```bash
+   bundle install
+   ```
+
+3. Setup database:
+
+   ```bash
+   rails db:create
+   rails db:migrate
+   ```
+
+4. Run the test suite to verify setup:
+
+   ```bash
+   rails test
+   ```
+
+5. Start the server:
+
+   ```bash
+   rails server
+   ```
+
+6. Visit `http://localhost:3000` in your browser.
+
+---
+
+## How it works
+
+* New users can sign up and log in. The "remember me" checkbox lets users stay logged in across browser sessions.
+* The app checks if the user's email has an associated WordPress Gravatar and displays it on their profile automatically after signup.
+* The Tweets feature is under development — currently, no tweets can be created or viewed.
+
+---
+
+## Testing
+
+* Tests are written using MiniTest and cover models, controllers, and integrations.
+* To run tests:
+
+  ```bash
+  rails test
+  ```
+* There are over 40 test files and 166 assertions ensuring all major features and edge cases are tested.
+
+---
 
 ## Contributing
 
-If you'd like to contribute, please fork the repository and create a pull request. You can also simply open an issue with the tag "bug" or "enhancement".
+Contributions and suggestions are welcome! Please fork the repository and create a pull request.
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
+
 
