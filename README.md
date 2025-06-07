@@ -1,4 +1,3 @@
-````markdown
 # Only Verified
 
 **Only Verified** is a minimalist Twitter clone application built with Ruby on Rails, designed to support a social platform exclusively for verified users. It focuses on authentication, user identity verification, and a clean, simple interface.
