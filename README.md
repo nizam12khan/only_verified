@@ -3,6 +3,11 @@
 **Only Verified** is a minimalist Twitter clone application built with Ruby on Rails, designed to support a social platform exclusively for verified users. It focuses on authentication, user identity verification, and a clean, simple interface.
 
 ---
+##Project Background
+
+This project was initially developed 3 years ago with the vision to create a platform for honest opinions and genuine conversations — free from paid troll armies, bots, and fake news.
+
+The core idea is to allow only verified accounts on the platform, where verification could be done via payment for background verification (BGV), ensuring the authenticity of users.
 
 ## Features
 
