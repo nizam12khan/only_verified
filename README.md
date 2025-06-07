@@ -68,7 +68,3 @@ You can find the live version of this application deployed on Heroku:
 
 If you'd like to contribute, please fork the repository and create a pull request. You can also simply open an issue with the tag "bug" or "enhancement".
 
-## License
-
-This project was initially based on the Ruby on Rails Tutorial by Michael Hartl. The original tutorial code is available under the MIT License and the Beerware License. This modified version is also open source; feel free to use the code as you see fit.
----
