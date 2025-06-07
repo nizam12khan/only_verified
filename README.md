@@ -1,5 +1,3 @@
-Here is the complete `README.md` file for your repo:
-
 ````markdown
 # Only Verified
 
